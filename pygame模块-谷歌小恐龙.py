@@ -14,6 +14,7 @@ screen = pygame.display.set_mode((width, height))
 
 # 设置窗口标题
 pygame.display.set_caption("Google Dino")
+background_color = (255, 255, 255)
 
 # 加载图像资源
 dino_img = pygame.image.load("/Users/mac/mystudy/mypython/dino.png")
