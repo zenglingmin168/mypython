@@ -2,7 +2,7 @@
 import openpyxl
 
 #先读取工作簿
-wb=openpyxl.load_workbook('景区天气数据.xlsx')
+wb=openpyxl.load_workbook('/Users/mac/mystudy/mypython/景区天气数据.xlsx')
 #再读取表
 sheet=wb['景区天气']
 #表格数据是一个二维数据，先读取行再读取列
@@ -16,3 +16,5 @@ for row in sheet.rows:
     lst.append(sublst)
 for item in lst:
     print(item)
+
+input()
