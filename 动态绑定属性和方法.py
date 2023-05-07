@@ -26,5 +26,6 @@ def introduce():
     print('我是一个普通函数，我被动态绑定成了stu2对象的方法')
 
 #为实例stu2动态绑定该方法
-stu2.fun=introduce
+stu2.fun=introduce  #一定不能带(),带()叫调用，不带()叫动态绑定
+#使用对象名打点调用方法
 stu2.fun()
