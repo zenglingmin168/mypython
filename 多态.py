@@ -20,6 +20,6 @@ if __name__ == '__main__':
     dog=Dog()       #创建Dog类型的对象dog
 
     #调用fun函数
-    fun(person)
+    fun(person) #python中的多态不关心对象的数据类型，只关心对象中是否有同名的方法
     fun(cat)
     fun(dog)

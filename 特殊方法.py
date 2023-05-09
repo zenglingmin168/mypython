@@ -1,0 +1,29 @@
+#coding:utf-8
+a=10
+b=20
+# print(dir(a))
+# print(a+b)
+#加
+print(a.__add__(b))
+#减
+print(a.__sub__(b))
+#小于
+print(f'{a}<{b}吗?',a.__lt__(b))
+#小于等于
+print(f'{a}<={b}吗?',a.__le__(b))
+#等于
+print(f'{a}=={b}吗?',a.__eq__(b))
+#大于
+print(f'{a}>{b}吗?',a.__gt__(b))
+#大于等于
+print(f'{a}>={b}吗?',a.__ge__(b))
+#乘
+print(a.__mul__(b))
+#非整除
+print(a.__truediv__(b))
+#余
+print(a.__mod__(b))
+#整除
+print(a.__floordiv__(b))
+#幂
+print(a.__pow__(2))
