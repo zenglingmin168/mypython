@@ -1,4 +1,5 @@
 #coding:utf-8
+#多继承就是一个子类可以从多个父类那里继承所有公有成员和受保护成员
 class FatherA():
     def __init__(self,name):
         self.name=name
