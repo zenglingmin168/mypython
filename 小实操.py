@@ -40,13 +40,27 @@
 # #用get方法时，即使没有输出结果也不会报错
 # print(d.get(star))
 
-#实操六、输出26个字母对应的ASSCII码值
-x=97
-# for _ in range(1,27):
-#     print(chr(x),'----->',x)
+# #实操六、输出26个字母对应的ASSCII码值
+# x=97
+# # for _ in range(1,27):
+# #     print(chr(x),'----->',x)
+# #     x+=1
+
+# while x<123:
+#     #chr函数接收一个整数参数，转换成对应的字符
+#     print(chr(x),'---->',x)
 #     x+=1
 
-while x<123:
-    #chr函数接收一个整数参数，转换成对应的字符
-    print(chr(x),'---->',x)
-    x+=1
+#实操七、模拟用户登录
+for i in range(1,4):
+    username=input('请输入用户名: ')
+    pwd=input('请输入密码: ')
+    if username=='admin' and pwd=='8888':
+        print('登陆成功')
+        break
+    else:
+        print('用户名或密码不正确')
+        if i<3:
+            print(f'你还有{3-i}次机会')
+else:
+    print('对不起，三次均输入错误，请联系后台管理员')
