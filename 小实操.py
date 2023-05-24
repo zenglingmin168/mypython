@@ -51,16 +51,42 @@
 #     print(chr(x),'---->',x)
 #     x+=1
 
-#实操七、模拟用户登录
-for i in range(1,4):
-    username=input('请输入用户名: ')
-    pwd=input('请输入密码: ')
-    if username=='admin' and pwd=='8888':
-        print('登陆成功')
-        break
-    else:
-        print('用户名或密码不正确')
-        if i<3:
-            print(f'你还有{3-i}次机会')
-else:
-    print('对不起，三次均输入错误，请联系后台管理员')
+# #实操七、模拟用户登录
+# for i in range(1,4):
+#     username=input('请输入用户名: ')
+#     pwd=input('请输入密码: ')
+#     if username=='admin' and pwd=='8888':
+#         print('登陆成功')
+#         break
+#     else:
+#         print('用户名或密码不正确')
+#         if i<3:
+#             print(f'你还有{3-i}次机会')
+# else:
+#     print('对不起，三次均输入错误，请联系后台管理员')
+
+# #实操八、猜数字游戏
+# import random
+# radm=random.randint(1,100)
+# for i in range(1,11):
+#     num=int(input('在我心中有个数，请你猜一猜: '))
+#     if num<radm:
+#         print('小了')
+#     elif num>radm:
+#         print('大了')
+#     else:
+#         print('恭喜你，猜对了')
+#         break
+# print(f'你一共猜了{i}次')
+# if i<3:
+#     print('哇喔，你太厉害了')
+# elif i<7:
+#     print('勉强还凑合')
+# else:
+#     print('你运气太差了')
+
+#水仙花数
+import math
+for i in range(100,1000):
+    if math.pow((i%10),3)+math.pow((i//10%10),3)+math.pow((i//100),3)==i:
+        print(i)
