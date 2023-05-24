@@ -85,8 +85,23 @@
 # else:
 #     print('你运气太差了')
 
-#水仙花数
-import math
-for i in range(100,1000):
-    if math.pow((i%10),3)+math.pow((i//10%10),3)+math.pow((i//100),3)==i:
-        print(i)
+# #水仙花数
+# import math
+# for i in range(100,1000):
+#     if math.pow((i%10),3)+math.pow((i//10%10),3)+math.pow((i//100),3)==i:
+#         print(i)
+
+#千年虫
+year=[82,89,88,86,85,00,99]
+print('原列表',year)
+#用enumerate() 函数同时遍历迭代器中的元素以及元素的索引
+for index,value in enumerate(year):
+    if str(value)!='0':
+        year[index]=int('19'+str(value))
+    else:
+        year[index]=int('200'+str(value))
+print('修改之后的列表',year)
+
+#排序
+year.sort()
+print('排序后的列表',year)
