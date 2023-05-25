@@ -91,17 +91,45 @@
 #     if math.pow((i%10),3)+math.pow((i//10%10),3)+math.pow((i//100),3)==i:
 #         print(i)
 
-#千年虫
-year=[82,89,88,86,85,00,99]
-print('原列表',year)
-#用enumerate() 函数同时遍历迭代器中的元素以及元素的索引
-for index,value in enumerate(year):
-    if str(value)!='0':
-        year[index]=int('19'+str(value))
-    else:
-        year[index]=int('200'+str(value))
-print('修改之后的列表',year)
+# #千年虫
+# year=[82,89,88,86,85,00,99]
+# print('原列表',year)
+# #用enumerate() 函数同时遍历迭代器中的元素以及元素的索引
+# for index,value in enumerate(year):
+#     if str(value)!='0':
+#         year[index]=int('19'+str(value))
+#     else:
+#         year[index]=int('200'+str(value))
+# print('修改之后的列表',year)
 
-#排序
-year.sort()
-print('排序后的列表',year)
+# #排序
+# year.sort()
+# print('排序后的列表',year)
+
+# #模拟购物
+# lst=[]
+# for i in range(1,6):
+#     goods=input('请输入商品编号和商品名称进行商品的入库，每次只能输入一件商品:\n')
+#     #往列表中添加元素
+#     lst.append(goods)
+# for item in lst:
+#     print(item)
+
+# carts=[]
+# while True:
+#     num=input('请输入要购买的商品编号: ')
+#     for item in lst:
+#         #查找字符串内是否包含子字符串num，如果包含则返回子字符串首字符的索引，否则返回-1
+#         if item.find(num)!=-1:
+#             #往列表中添加元素
+#             carts.append(item)
+#             #退出for循环
+#             break
+#     if num=='q':
+#         #退出while循环
+#         break
+# print('你的购物车添加的商品为:  ')
+# # for m in carts:
+# #     print(m)
+# for i in range(len(carts)-1,-1,-1):
+#     print(carts[i])
