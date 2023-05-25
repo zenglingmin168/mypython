@@ -133,3 +133,26 @@
 # #     print(m)
 # for i in range(len(carts)-1,-1,-1):
 #     print(carts[i])
+
+#星座
+constellation=['白羊座','金牛座','双子座','巨蟹座','狮子座','处女座','天秤座','天蝎座','射手座','摩羯座','水瓶座','双鱼座']
+nature=['积极乐观','固执内向','圆滑世故','多愁善感','迷之自信','精明计较','犹豫不决','阴暗消极','放荡不羁','务实本份','作天作地','安于现状']
+#将两个列表转成集合
+d=dict(zip(constellation,nature))
+for item in d:
+    #分别通过item和d[item]输出键、值
+    print(item,d[item])
+print(d)
+
+key=input('请输入您的星座名称: ')
+flag=True
+for item in d:
+    if key==item:
+        flag=True
+        print(key,' 的星座特点为 ',d.get(key))
+        break
+    else:
+        flag=False
+if not flag:
+    print('对不起，你输入的星座不存在')
+
